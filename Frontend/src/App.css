@@ -1,0 +1,160 @@
+body {
+  font-family: inter;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+form {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 8px;
+}
+.p{
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+}
+button {
+  width: 95%;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.logout{
+  width: 10%;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.main-div{
+  height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk50TttmPiylOG-napACdyj9nGiUo625EkBw&s");
+  
+}
+button:hover {
+  background: #0056b3;
+}
+.h1{
+  text-align: center;
+}
+.travel_list{
+  padding: 10px;
+}
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 50px 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.travel-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  /* margin:150px 5px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.travel-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.travel-content {
+  flex-grow: 1; 
+}
+
+.travel-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+
+.edit-button, .delete-button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.edit-button {
+  background: #4caf50;
+  color: white;
+}
+
+.delete-button {
+  background: #ff4d4d;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #cc0000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

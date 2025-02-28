@@ -1,0 +1,10 @@
+const express = require("express");
+const { addData, getData, getMultipleData, updatedata, deleteData } = require("../controllers/travelController");
+const protect = require("../middleWare/authMiddleware");
+const router = express.Router();
+router.post("/", protect, addData);
+router.get("/", protect, getMultipleData);
+router.get("/:id", protect, getData);
+router.put("/:id", protect, updatedata);
+router.delete("/:id", protect, deleteData);
+module.exports = router;
